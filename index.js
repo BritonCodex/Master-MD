@@ -1,10 +1,6 @@
-//base by Tech-God
-//re-upload? recode? copy code? give credit ya :)
-//YouTube: @techgod143
-//Instagram: techgod143
-//Telegram: t.me/techgod143
-//GitHub: @techgod143
-//WhatsApp: +917466008456
+//base by Master-MD
+//GitHub: @BritonCodex
+//WhatsApp: +254705579314
 //want more free bot scripts? subscribe to my youtube channel: https://youtube.com/@techgod143
 
 const {
