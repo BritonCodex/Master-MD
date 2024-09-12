@@ -1,10 +1,7 @@
-//base by Tech-God
+//base by Master-MD
 //re-upload? recode? copy code? give credit ya :)
-//YouTube: @techgod143
-//Instagram: techgod143
-//Telegram: t.me/techgod143
-//GitHub: @techgod143
-//WhatsApp: +917466008456
+//GitHub: @BritonCodex
+//WhatsApp: +254705579314
 //want more free bot scripts? subscribe to my youtube channel: https://youtube.com/@techgod143
 
 require('./settings')
@@ -32,7 +29,7 @@ const store = makeInMemoryStore({
     })
 })
 
-let phoneNumber = "911234567890"
+let phoneNumber = "254705579314"
 let owner = JSON.parse(fs.readFileSync('./database/owner.json'))
 
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
@@ -78,11 +75,11 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./session`)
          phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
          if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
-            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +916909137213")))
+            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +25470557914")))
             process.exit(0)
          }
       } else {
-         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +916909137213 : `)))
+         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +254705579314 : `)))
          phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
          // Ask again when entering the wrong number
@@ -177,10 +174,10 @@ XeonBotInc.ev.on("connection.update",async  (s) => {
             console.log(chalk.yellow(`\n\n                  ${chalk.bold.blue(`[ ${botname} ]`)}\n\n`))
             console.log(chalk.cyan(`< ================================================== >`))
 	        console.log(chalk.magenta(`\n${themeemoji} YT CHANNEL: Tech God`))
-            console.log(chalk.magenta(`${themeemoji} GITHUB: techgod143`))
-            console.log(chalk.magenta(`${themeemoji} INSTAGRAM: @techgod143 `))
+            console.log(chalk.magenta(`${themeemoji} GITHUB: BritonCodex`))
+            console.log(chalk.magenta(`${themeemoji} INSTAGRAM: @briton.yg `))
             console.log(chalk.magenta(`${themeemoji} WA NUMBER: ${owner}`))
-            console.log(chalk.magenta(`${themeemoji} CREDIT: tech god sir`))
+            console.log(chalk.magenta(`${themeemoji} CREDIT: Briton codex sir`))
         }
         if (
             connection === "close" &&
